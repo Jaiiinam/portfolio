@@ -1,37 +1,58 @@
-body {
-    
-}
+
 #main-header img {
     width: 100%;
     height: 100%;
-  }
+}
   
-  #main-header .port-item {
+#main-header .port-item {
     width: 30%;
-  }
+}
   
-  #main-header .port-item:hover {
+#main-header .port-item:hover {
     opacity: 0.8;
     cursor: pointer;
-  }
+}
   
-  .bg-black {
+.bg-black {
     color: #fff;
     background: #000;
-  }
+}
   
-  @media (min-width: 1199px) {
+@media (min-width: 1199px) {
     .port-item {
       padding: 3em !important;
-    }
   }
+}
 
-  footer {     
-      align-items: center;
+footer {     
+    align-items: center;
+}
+.img-thumbnail {
+  margin: 10px;
+}
+#work {
+  background: lightblue;
+}
+
+.typewriter h4 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
   }
-  .img-thumbnail {
-    margin: 10px;
-  }
-  #work {
-    background: lightblue;
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
   }
